@@ -1,0 +1,24 @@
+Results for Tests on 5000 values
+
+Depth = depth of tree, Cost = average #comparisons per search
+
+
+             Ascending Order        Prefix Order        Random Order
+Insert
+Method       Depth      Cost     Depth      Cost     Depth      Cost
+
+L            5000       4989      13         20       28        27
+
+A            5000       1887      2954      1116      28        26
+
+R            2492       2549      1774      676       27        26
+
+B            206        115       20        25        23        22
+
+S            33         5         29        5         31        9 
+
+V            13         20        13        20        15         20
+
+
+Notes (what the above indicates):
+Overall, the lesser the depth was for a tree, the smaller the cost was for search for that tree. From the table, I see that the when I insert the numbers in an ascending order with an insertion at leaf method, it had the largest value of depth and the cost. This is potentially due to the fact that it is a linear data structure similar to an array or a linkedlist so it has traverse all the way down to find a value when implementing search. Also, AVL tree insertion method had the smallest depth and cost in general. AVL tree will try to balance by itself rotating the tree everytime a new value is inserted therefore it will certainly have the least depth. Then it will have the smallest cost for any implementation.  
